@@ -127,5 +127,5 @@ for err_ = abs(h_n-y)
 end
 
 if correct_
-    disp('answer in f is the same as answer in b')
+    disp('answer in f is the same as the theoretical answer in b')
 end
