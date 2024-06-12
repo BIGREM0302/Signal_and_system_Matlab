@@ -13,6 +13,8 @@ ylabel('Imaginary');
 %%
 [r, p, k] = residuez(num, den); 
 n = 0:20;
+
+
 h_n = zeros(size(n));
 for i = 1:length(r)
     h_n = h_n + r(i) * p(i).^n;
@@ -46,6 +48,7 @@ ylabel('Phase(H(e^j\omega))(degree)');
 
 %%
 z=[-1, -1, 1, 1];
+
 p=[0.3+0.4i, 0.3-0.4i,0.1+0.1i,0.1-0.1i];
 sos = zp2sos(z, p,0.09); % Second-order sections
 disp('Second-Order Sections:');
