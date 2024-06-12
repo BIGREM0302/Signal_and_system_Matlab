@@ -6,7 +6,9 @@ den = [1,-0.8,0.39,-0.062,0.005];
 figure;
 subplot(2,4,1);
 zplane(num, den);
-title('Poles and Zeros Plot of H(z)');
+
+title('Poles and Zeros Plot of the Transfer function');
+
 xlabel('Real');
 ylabel('Imaginary');
 
